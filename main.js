@@ -31,11 +31,10 @@ for (let key of keys) {
 			let result = eval(PerpareInput(input));
 
 			display_output.innerHTML = CleanOutput(result);
-        }
-        else if (value == "%") {  
+        } else if (value == "%") {  
             input += "%";  
             display_input.innerHTML = CleanInput(input);
-        }else {
+        } else {
             if (ValidateInput(value)) {
                 input += value;
                 display_input.innerHTML = CleanInput(input);
